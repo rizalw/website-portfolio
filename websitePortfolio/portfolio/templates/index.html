@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>My Portfolio Website</title>
+{% endblock %}
+
+{% block nav-home %}
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+{% endblock %}
+
+{% block nav-myproject %}
+<a href="{% url 'projects' %}" class="nav-link">Projects</a>
+{% endblock %}
+
+{% block nav-certification %}
+<a href="{% url 'certifications' %}" class="nav-link">Achievements & Certifications</a>
+{% endblock %}
+
+{% block nav-about %}
+<a class="nav-link" href="{% url 'about' %}">About Me</a>
+{% endblock %}
+
+
+{% block body %}
+<div class="d-flex flex-column align-content-center jumbotron">
+    <h1 class="display-4 text-center"><b>Hello Everyone<br><span class="display-5">it's me, Rizal</span></b></h1>
+    <img src="{% static 'portfolio/image/foto diri.png' %}" alt="" class="w-25 my-3 mx-auto rounded-circle border border-dark border-5">
+    <p class="fs-5 text-center w-75 ms-auto me-auto" id="aktivitas">This is my portfolio website. I like to learn about data and web development. I know it's just plain design and don't have many accessories, but I hope you enjoy it. if you want to know more about me. Click a button on the bottom or just click "About Me" on the navigation bar.</p>
+    <a href="{% url 'about' %}">
+        <button class="d-block mx-auto btn btn-secondary">Click here!</button>
+    </a>
+</div>
+{% endblock %}

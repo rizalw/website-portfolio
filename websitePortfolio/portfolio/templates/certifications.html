@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>My Certifications</title>
+{% endblock %}
+
+{% block nav-home %}
+<a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+{% endblock %}
+
+{% block nav-myproject %}
+<a href="{% url 'projects' %}" class="nav-link ">Projects</a>
+{% endblock %}
+
+{% block nav-certification %}
+<a href="#" class="nav-link active">Achievements & Certifications</a>
+{% endblock %}
+
+{% block nav-about %}
+<a class="nav-link" href="{% url 'about' %}">About Me</a>
+{% endblock %}
+
+{% block body %}
+<div class="display-5 text-center judul-about">
+    Achievements & Certifications
+</div>
+<div class="my-certifications container-fluid my-3">
+    <img src="{% static 'portfolio/image/Success.jpg' %}" alt="" class="d-block w-50 mx-auto rounded-circle">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="fs-3 text-center text-md-start text-lg-center mt-2 fw-bold">Achievements</div>
+            <div class="achievements">
+                <div class="achievement mt-3">
+                    <div class="fs-4 text-center lh-sm">Finalist of Gemastik 2021 on Data Mining Category</div>
+                    <small class="d-block text-center">Top 20 From 153 Teams Across Indonesia</small>
+                    <img class="d-block w-75 mx-auto mt-2" src="{% static 'portfolio/image/sertifikat/sertifikat gemastik 2021.jpg' %}" alt="">
+                </div>
+                <div class="achievement mt-3">
+                    <div class="fs-4 text-center lh-sm">Finalist of Computing Competitive Programming 2020</div>
+                    <small class="d-block text-center">First competition that I reach final stage</small>
+                    <img class="d-block w-75 mx-auto mt-2" src="{% static 'portfolio/image/sertifikat/sertifikat ccp.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="fs-3 text-center text-md-start text-lg-center mt-md-2 mt-5 fw-bold">Certifications</div>
+            <div class="certifications">
+                <div class="certification mt-3">
+                    <div class="fs-4 lh-sm">1. Belajar Machine Learning Untuk Pemula - Dicoding Indonesia</div>
+                    <div class="description-certification">
+                        I learn about the basic of machine learning and learn some of basic and essentials model such as Convolutional Neural Network, Support Vector Machine, and many more.
+                    </div>
+                    <a href="https://www.dicoding.com/certificates/QLZ91VY2DP5D" target="blank" class="">
+                        <button class="btn view-something mt-2">See credential</button>
+                    </a>
+                </div>
+                <div class="certification mt-3">
+                    <div class="fs-4 lh-sm">2. Memulai Pemrograman Dengan Python - Dicoding Indonesia</div>
+                    <div class="description-certification">
+                        I learn how to use python programming language and implement it in various ways. This knowledge will open many thing about what python can do.
+                    </div>
+                    <a href="https://www.dicoding.com/certificates/KEXL45784XG2" target="blank" class="">
+                        <button class="btn view-something mt-2">See credential</button>
+                    </a>
+                </div>
+                <div class="certification mt-3">
+                    <div class="fs-4 lh-sm">3. Belajar Dasar Visualisasi Data - Dicoding Indonesia</div>
+                    <div class="description-certification">
+                        I learn how to visualize data from excel. I learn how to make some charts such as line chart, bar chart, and many more.
+                    </div>
+                    <a href="https://www.dicoding.com/certificates/53XEWL80VXRN" target="blank" class="">
+                        <button class="btn view-something mt-2">See credential</button>
+                    </a>
+                </div>
+                <div class="certification mt-3">
+                    <div class="fs-4 lh-sm">4. Belajar Dasar Pemrograman Web - Dicoding Indonesia</div>
+                    <div class="description-certification">
+                        I learn how to make a responsive website from scratch (without CSS Framework) and also learn how to use local storage, session, and cookies using Javascript
+                    </div>
+                    <a href="https://www.dicoding.com/certificates/EYX47RG5RXDL" target="blank" class="">
+                        <button class="btn view-something mt-2">See credential</button>
+                    </a>
+                </div>
+                <div class="certification mt-3">
+                    <div class="fs-4 lh-sm">5. Cloud Practitioner Essentials (Belajar Dasar AWS Cloud) - Dicoding Indonesia</div>
+                    <div class="description-certification">
+                        I learn about what is AWS, how AWS Cloud works, and how AWS handle many real life problems.
+                    </div>
+                    <a href="https://www.dicoding.com/certificates/ERZR5QR9WPYV" target="blank" class="">
+                        <button class="btn view-something mt-2">See credential</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
