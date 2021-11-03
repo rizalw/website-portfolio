@@ -1,0 +1,53 @@
+/* General */
+*{
+    box-sizing: border-box;
+}
+nav{
+    background-color: #54627B;
+}
+a{
+    text-decoration: none !important;
+}
+
+/* Base.html */
+footer nav a{
+    color: white;
+}
+footer nav a:hover{
+    color: white;
+}
+footer nav span{
+    color: white;
+}
+
+/* Halaman About Us */
+.link-sosmed{
+    color: black;
+}
+.link-sosmed:hover{
+    color: black;
+    text-decoration: underline !important;
+}
+.logo{
+    width: 100px;
+}
+.smol{
+    font-size: 10px;
+}
+
+/* Halaman Projects */
+.tools{
+    background-color: rgb(0, 0, 0, .1)  !important;
+}
+.view-something{
+    background-color: #ECD5BB !important;
+    color: black !important;
+}
+.gambar-project{
+    display: block;
+    width:700px;
+    height:auto;
+}
+.list-project{
+    height: 100%;
+}
