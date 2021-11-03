@@ -1,1 +1,1 @@
-web: gunicorn websitePortfolio.wsgi:application --log-file - --log-level debug
+web: gunicorn --chdir websitePortfolio websitePortfolio.wsgi:application --log-file - --log-level debug
