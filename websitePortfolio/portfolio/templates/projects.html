@@ -18,7 +18,7 @@
 {% endblock %}
 
 {% block nav-about %}
-<a class="nav-link" href="{% url 'about' %}">About Me</a>
+<a class="nav-link" href="{% url 'about' %}">About</a>
 {% endblock %}
 
 {% block body %}
@@ -141,6 +141,19 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <a href="{% url 'index' %}">
+            <button class="d-block mx-auto btn btn-secondary">< Home</button>
+        </a>
+    </div>
+    <div class="col"></div>
+    <div class="col">
+        <a href="{% url 'certifications' %}">
+            <button class="d-block mx-auto btn btn-secondary">Achiev. & Cert. ></button>
+        </a>
     </div>
 </div>
 <!-- For pop up in portfolio website project -->

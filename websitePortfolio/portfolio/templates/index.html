@@ -18,7 +18,7 @@
 {% endblock %}
 
 {% block nav-about %}
-<a class="nav-link" href="{% url 'about' %}">About Me</a>
+<a class="nav-link" href="{% url 'about' %}">About</a>
 {% endblock %}
 
 
@@ -27,8 +27,20 @@
     <h1 class="display-4 text-center"><b>Hello Everyone<br><span class="display-5">it's me, Rizal</span></b></h1>
     <img src="{% static 'portfolio/image/fotodiri.png' %}" alt="" class="w-25 my-3 mx-auto rounded-circle border border-dark border-5">
     <p class="fs-5 text-center w-75 ms-auto me-auto" id="aktivitas">This is my portfolio website. I like to learn about data and web development. I know it's just plain design and don't have many accessories, but I hope you enjoy it. if you want to know more about me. Click a button on the bottom or just click "About Me" on the navigation bar.</p>
-    <a href="{% url 'about' %}">
-        <button class="d-block mx-auto btn btn-secondary">Click here!</button>
-    </a>
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+            <a href="{% url 'about' %}">
+                <button class="d-block mx-auto btn btn-secondary">Click here!</button>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{% url 'projects' %}">
+                <button class="d-block mx-auto btn btn-secondary">Projects ></button>
+            </a>
+        </div>
+    </div>
 </div>
 {% endblock %}
